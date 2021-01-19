@@ -1,0 +1,56 @@
+.home {
+  height: 100vh;
+  //background-color: lightgreen;
+  padding: 1rem 3rem;
+}
+
+.socialnav {
+  height: 25vh;
+  ul {
+    display: flex;
+    li {
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+.home__main {
+  height: 75vh;
+  //background-color: lightpink;
+  display: flex;
+  /* position: relative; */
+  .home__description {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //background-color: lightseagreen;
+    h1,
+    h3 {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .home__me {
+    flex: 1;
+  }
+}
+
+.home__button {
+  padding-top: 2rem;
+  button {
+    border: none;
+    background-color: #ff982e;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: center;
+    span {
+      padding-right: 1.5rem;
+    }
+  }
+}
