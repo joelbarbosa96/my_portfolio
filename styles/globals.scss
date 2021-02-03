@@ -39,12 +39,7 @@ ul {
   list-style-type: none;
 }
 
-.page {
-  display: flex;
-}
-
 .main {
-  flex: 1;
-  overflow: auto;
+  margin-left: 7.5rem;
   background-color: #f6f7f8;
 }

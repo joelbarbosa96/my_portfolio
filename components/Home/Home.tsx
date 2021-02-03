@@ -1,11 +1,13 @@
 //Styles, images and animations
 import styles from "./Home.module.scss";
+
 import {
-  ArrowIcon,
-  LinkedinIcon,
-  GithubIcon,
-  InstagramIcon,
-} from "../../public/Icons";
+  FaLinkedin,
+  FaGithubSquare,
+  FaInstagramSquare,
+  FaArrowDown,
+} from "react-icons/fa";
+
 import Me from "../../public/Me";
 
 const Home = () => {
@@ -20,7 +22,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/joelbarbosa10/"
               >
-                <LinkedinIcon />
+                <FaLinkedin className={styles.icon_socialnav} />
               </a>
             </li>
             <li>
@@ -29,7 +31,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 href="https://github.com/joelbarbosa96"
               >
-                <GithubIcon />
+                <FaGithubSquare className={styles.icon_socialnav} />
               </a>
             </li>
             <li>
@@ -38,7 +40,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/chelas79274/"
               >
-                <InstagramIcon />
+                <FaInstagramSquare className={styles.icon_socialnav} />
               </a>
             </li>
           </ul>
@@ -46,17 +48,14 @@ const Home = () => {
       </header>
       <section className={styles.home__main}>
         <article className={styles.home__description}>
-          <h1>Full Stack Developer.</h1>
-          <h3>
-            Hi there! My name is Joel Barbosa. A passionate Frontend Developer
-            who does Full Stack Development as well, based in Portugal.
-          </h3>
+          <h3>Hi There,</h3>
+          <h1>I am a Developer.</h1>
           <h3>
             Welcome to my <span>Portfolio Website.</span>
           </h3>
           <div className={styles.home__button}>
             <button>
-              <span>MY PROJECTS</span> <ArrowIcon />
+              <span>MY PROJECTS</span> <FaArrowDown />
             </button>
             <p>
               <span>Please,</span> don't forget to pet the cat first.
