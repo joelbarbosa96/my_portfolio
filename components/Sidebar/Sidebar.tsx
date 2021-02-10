@@ -5,23 +5,28 @@ import styles from "./Sidebar.module.scss";
 
 const Sidebar = () => {
   return (
-    <nav className={styles.sidebar}>
-      <Link href="/#home">
-        <a>Home</a>
+    <>
+      <Link href="#home">
+        <li>
+          <a>Home</a>
+        </li>
       </Link>
-      <Link href="/#education">
-        <a>Education</a>
+      <Link href="#about">
+        <li>
+          <a>About</a>
+        </li>
       </Link>
-      <Link href="/#experience">
-        <a>Experience</a>
+      <Link href="#projects">
+        <li>
+          <a>Projects</a>
+        </li>
       </Link>
-      <Link href="/#projects">
-        <a>Projects</a>
+      <Link href="#contacts">
+        <li>
+          <a>Contacts</a>
+        </li>
       </Link>
-      <Link href="/#about">
-        <a>About</a>
-      </Link>
-    </nav>
+    </>
   );
 };
 
