@@ -6,6 +6,8 @@ import Scrollspy from "react-scrollspy";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Home from "../components/Home/Home";
 import About from "../components/About/About";
+import Projects from "../components/Projects/Projects";
+import Contacts from "../components/Contacts/Contacts";
 
 export default function LandingPage() {
   return (
@@ -45,6 +47,8 @@ export default function LandingPage() {
       <main className="main">
         <Home />
         <About />
+        <Projects />
+        <Contacts />
       </main>
     </div>
   );

@@ -17,13 +17,19 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
 h3 {
   font-size: 2rem;
   font-weight: 400;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 
 span {
@@ -43,10 +49,40 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+  background-color: #ff982e;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 .main {
   margin-left: 7.5rem;
   background-color: #f6f7f8;
 }
+
+.title {
+  display: inline-block;
+  h1 {
+    display: flex;
+    flex-direction: column;
+    &::after {
+      content: "";
+      width: inherit;
+      height: 0.6rem;
+      background-color: #ff982e;
+      border-radius: 1rem;
+    }
+  }
+}
+
+/* SIDEBAR */
 
 .sidebar {
   width: 7.5rem;

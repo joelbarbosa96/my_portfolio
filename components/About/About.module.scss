@@ -1,5 +1,133 @@
-.home {
-  height: 100vh;
+.about {
+  height: 200vh;
   margin-top: 1rem;
   padding: 1rem 3rem;
+}
+
+.about_overview {
+  margin-top: 4rem;
+  display: flex;
+  .picture {
+    margin-left: 2rem;
+    position: relative;
+    .picture_me {
+      border-radius: 1rem;
+      z-index: 2;
+    }
+    .picture_square {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 400px;
+      height: 450px;
+      background-color: rgba(255, 152, 46, 0.5);
+      border-radius: 1rem;
+    }
+    /*     &::before {
+      content: "";
+     
+    } */
+  }
+  .personal_info {
+    flex: 2;
+    padding-left: 2rem;
+    .personal_info__description {
+      padding: 1rem 0 1rem 0;
+    }
+    .personal_info__data {
+      display: flex;
+      .personal_info__data__values {
+        flex: 1;
+        p {
+          padding: 1rem 0 1rem 0;
+        }
+      }
+    }
+    .personal_info__data_downloadcv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      button {
+        span {
+          font-weight: 400;
+          padding-left: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.personal_hobbies {
+  margin: 10rem 0 10rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  .personal_hobbies__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .personal_hobbies__content__icon {
+      font-size: 8rem;
+      padding-bottom: 1rem;
+    }
+    &:hover {
+      color: #ff982e;
+    }
+  }
+}
+
+.exp_educ_skills {
+  display: flex;
+  h2 {
+    padding-bottom: 2rem;
+  }
+  .my_experience {
+    flex: 1;
+
+    padding-right: 1.5rem;
+  }
+  .my_education {
+    flex: 1;
+    padding-left: 1.5rem;
+  }
+
+  .my_skills {
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    h2 {
+      padding-bottom: 0rem;
+    }
+    .my_skills__content {
+      display: flex;
+    }
+  }
+  div {
+    flex: 1;
+  }
+}
+
+.my_experience__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 1rem;
+  .my_experience__card__timeline {
+    border-left: 1px solid #ff982e;
+    margin-left: 3rem;
+    .my_experience__element {
+      padding: 2rem;
+      position: relative;
+      .my_experience__element__description {
+        padding-top: 1rem;
+      }
+      &::after {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: #ff982e;
+        position: absolute;
+        top: 13.5%;
+        left: -1%;
+      }
+    }
+  }
 }
